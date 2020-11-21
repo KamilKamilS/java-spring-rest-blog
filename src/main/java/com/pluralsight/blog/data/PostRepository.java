@@ -16,4 +16,10 @@ public interface PostRepository extends JpaRepository<Post, Long> {
         return new ArrayList<>();
     }
 
+
+    default List<Post> findByAuthor_Lastname(String lastname) {
+        return new ArrayList<>();
+    }
+
 }
+
